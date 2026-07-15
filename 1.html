@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 1 - Pengertian Hari Akhir dan Nama Lain Hari Akhir | Akidah Akhlak Kelas IX</title>
+    
+    <!-- Google Fonts: Playfair Display (Luxury) & Montserrat (Modern) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0a0e17;
+            --bg-card: #111827;
+            --gold-primary: #d4af37;
+            --gold-light: #f3e5ab;
+            --gold-dark: #aa8c2c;
+            --text-light: #f8f9fa;
+            --text-muted: #9ca3af;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--gold-primary); }
+        a { color: var(--gold-light); text-decoration: none; transition: color 0.3s ease; }
+        a:hover { color: var(--gold-primary); text-decoration: underline; }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: rgba(17, 24, 39, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .nav-links { display: flex; gap: 1.5rem; font-size: 0.9rem; font-weight: 600; }
+        .nav-links a { color: var(--text-muted); text-decoration: none; }
+        .nav-links a:hover { color: var(--gold-primary); }
+
+        /* Main Content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+        }
+        .chapter-header h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .chapter-header p { color: var(--text-muted); font-size: 1.1rem; max-width: 700px; margin: 0 auto; }
+
+        .content-section { margin-bottom: 2.5rem; }
+        .content-section h2 { font-size: 1.8rem; margin-bottom: 1rem; border-left: 4px solid var(--gold-primary); padding-left: 1rem; }
+        .content-section h3 { font-size: 1.3rem; margin: 1.5rem 0 0.75rem; color: var(--gold-light); }
+        .content-section p { margin-bottom: 1rem; color: #d1d5db; }
+        .content-section ul, .content-section ol { margin-left: 1.5rem; margin-bottom: 1rem; color: #d1d5db; }
+        .content-section li { margin-bottom: 0.5rem; }
+
+        .highlight-box {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .highlight-box h4 { color: var(--gold-primary); margin-bottom: 0.75rem; font-size: 1.1rem; }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        th { background: rgba(212, 175, 55, 0.1); color: var(--gold-primary); font-weight: 700; }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.85rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold-primary) 0%, var(--gold-dark) 100%);
+            color: var(--bg-dark);
+        }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); text-decoration: none; }
+        
+        .btn-outline {
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-primary);
+        }
+        .btn-outline:hover { background: var(--gold-primary); color: var(--bg-dark); text-decoration: none; }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-muted);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 0.1); color: var(--text-light); text-decoration: none; }
+
+        /* Footer */
+        footer {
+            background-color: #05080f;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+            margin-top: 4rem;
+        }
+        footer p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        footer .gold { color: var(--gold-primary); font-weight: 600; }
+
+        @media (max-width: 600px) {
+            .navbar { flex-direction: column; gap: 1rem; text-align: center; }
+            .nav-links { flex-wrap: wrap; justify-content: center; }
+            .chapter-header h1 { font-size: 1.8rem; }
+            .action-buttons { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi Atas -->
+    <nav class="navbar">
+        <div style="font-family: 'Playfair Display', serif; font-weight: 700; color: var(--gold-primary); font-size: 1.1rem;">
+            Akidah Akhlak Kelas IX
+        </div>
+        <div class="nav-links">
+            <a href="index.html">🏠 Beranda</a>
+            <a href="index.html#daftar-pertemuan">📑 Daftar Pertemuan</a>
+            <a href="index.html#penulis">✍️ Penulis</a>
+        </div>
+    </nav>
+
+    <!-- Konten Utama -->
+    <main class="container">
+        <div class="chapter-header">
+            <p style="color: var(--gold-primary); font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 0.5rem;">Pertemuan 01</p>
+            <h1>Pengertian Hari Akhir dan Nama Lain Hari Akhir</h1>
+            <p>Konsep dasar hari akhir (Yaumul Qiyamah), pengertian, dalil naqli, dan berbagai nama lain hari akhir dalam perspektif Islam. Memahami esensi beriman kepada hari akhir bagi siswa.</p>
+        </div>
+
+        <!-- Bagian A -->
+        <section class="content-section">
+            <h2>A. Pengertian Hari Akhir</h2>
+            <p>Hari Akhir atau <em>Yaumul Qiyamah</em> adalah hari berakhirnya seluruh kehidupan di dunia dan dimulainya kehidupan yang kekal di akhirat. Secara bahasa, "Qiyamah" berarti bangkit atau berdiri, yang merujuk pada kebangkitan semua makhluk dari alam kubur untuk mempertanggungjawabkan seluruh amal perbuatannya di hadapan Allah SWT.</p>
+            <p>Dalam akidah Islam, beriman kepada Hari Akhir adalah rukun iman yang kelima. Keyakinan ini bukan sekadar dogma, melainkan fondasi yang membentuk kesadaran moral dan tanggung jawab seorang siswa dalam kehidupan sehari-hari.</p>
+            
+            <div class="highlight-box">
+                <h4>Definisi Menurut Para Ulama:</h4>
+                <p><strong>Imam Al-Ghazali:</strong> Hari Akhir adalah hari pembalasan di mana semua rahasia hati dan perbuatan fisik akan dihisab secara adil oleh Allah SWT.</p>
+                <p><strong>Prof. Dr. Buya Hamka:</strong> Hari Kiamat adalah hari di mana keadilan Tuhan yang sempurna akan tegak, tidak ada lagi kezaliman yang tersisa.</p>
+            </div>
+        </section>
+
+        <!-- Bagian B -->
+        <section class="content-section">
+            <h2>B. Nama-nama Lain Hari Akhir</h2>
+            <p>Al-Qur'an menyebutkan Hari Akhir dengan berbagai nama yang masing-masing menggambarkan kondisi atau peristiwa yang akan terjadi pada hari tersebut. Pemahaman terhadap nama-nama ini memperkaya wawasan keislaman siswa.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nama Hari Akhir</th>
+                        <th>Arti</th>
+                        <th>Kondisi/Peristiwa yang Digambarkan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><em>Yaumul Ba'ats</em></td>
+                        <td>Hari Kebangkitan</td>
+                        <td>Hari dibangkitkannya semua manusia dari alam kubur.</td>
+                    </tr>
+                    <tr>
+                        <td><em>Yaumul Hasyr</em></td>
+                        <td>Hari Berkumpul</td>
+                        <td>Hari dikumpulkannya seluruh manusia di Padang Mahsyar.</td>
+                    </tr>
+                    <tr>
+                        <td><em>Yaumul Hisab</em></td>
+                        <td>Hari Perhitungan</td>
+                        <td>Hari diperhitungkannya seluruh amal perbuatan manusia.</td>
+                    </tr>
+                    <tr>
+                        <td><em>Yaumul Mizan</em></td>
+                        <td>Hari Penimbangan</td>
+                        <td>Hari ditimbangnya amal baik dan amal buruk manusia.</td>
+                    </tr>
+                    <tr>
+                        <td><em>Yaumul Jaza'</em></td>
+                        <td>Hari Pembalasan</td>
+                        <td>Hari pemberian balasan (surga atau neraka) sesuai amal.</td>
+                    </tr>
+                    <tr>
+                        <td><em>Yaumul Wa'id</em></td>
+                        <td>Hari Ancaman</td>
+                        <td>Hari terlaksananya ancaman Allah bagi orang yang ingkar.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Bagian C -->
+        <section class="content-section">
+            <h2>C. Dalil Naqli tentang Hari Akhir</h2>
+            <p>Keimanan kepada Hari Akhir didasarkan pada Al-Qur'an dan Hadis yang shahih. Berikut adalah dalil utama yang menjadi rujukan:</p>
+            
+            <div class="highlight-box">
+                <h4>QS. Al-Hajj [22]: 7</h4>
+                <p style="font-style: italic; color: var(--gold-light);">"Dan sungguh, (hari) Kiamat itu pastilah datang, tidak ada keraguan padanya; dan sungguh, Allah akan membangkitkan siapa pun yang di dalam kubur."</p>
+            </div>
+            <div class="highlight-box">
+                <h4>QS. Al-Zalzalah [99]: 7-8</h4>
+                <p style="font-style: italic; color: var(--gold-light);">"Maka barangsiapa mengerjakan kebaikan seberat zarrah, niscaya dia akan melihat (balasan)nya. Dan barangsiapa mengerjakan kejahatan seberat zarrah, niscaya dia akan melihat (balasan)nya pula."</p>
+            </div>
+        </section>
+
+        <!-- Bagian D -->
+        <section class="content-section">
+            <h2>D. Hikmah Beriman kepada Hari Akhir bagi Siswa</h2>
+            <p>Keimanan yang benar kepada Hari Akhir akan melahirkan akhlak yang mulia. Berikut adalah hikmah yang dapat diterapkan oleh siswa dalam kehidupan sehari-hari:</p>
+            <ol>
+                <li><strong>Meningkatkan Ketaatan:</strong> Siswa akan termotivasi untuk menjalankan perintah Allah (seperti shalat dan belajar dengan sungguh-sungguh) karena menyadari adanya pahala.</li>
+                <li><strong>Menghindari Maksiat:</strong> Kesadaran akan hisab dan timbangan amal membuat siswa takut untuk melakukan perbuatan tercela, seperti menyontek atau berbohong.</li>
+                <li><strong>Tawakal dan Sabar:</strong> Menyadari bahwa keadilan sejati ada di akhirat membuat siswa lebih sabar menghadapi ujian atau ketidakadilan di dunia.</li>
+                <li><strong>Manajemen Waktu:</strong> Menyadari bahwa waktu di dunia sangat singkat mendorong siswa untuk menggunakan waktu muda dengan hal-hal yang produktif dan bermanfaat.</li>
+            </ol>
+        </section>
+
+        <!-- Bagian E -->
+        <section class="content-section">
+            <h2>E. Poin Penting untuk Ujian</h2>
+            <ul>
+                <li>Pahami perbedaan arti antara <em>Yaumul Ba'ats</em>, <em>Yaumul Hasyr</em>, dan <em>Yaumul Hisab</em>.</li>
+                <li>Hafalkan minimal 3 dalil Naqli (Al-Qur'an atau Hadis) yang berkaitan dengan Hari Akhir.</li>
+                <li>Jelaskan hubungan antara iman kepada Hari Akhir dengan pembentukan akhlak terpuji pada siswa.</li>
+                <li>Pahami bahwa Hari Akhir adalah keyakinan mutlak (qath'i) yang tidak dapat diragukan dalam Islam.</li>
+            </ul>
+        </section>
+
+        <!-- Bagian F -->
+        <section class="content-section">
+            <h2>F. Relevansi untuk Kehidupan Siswa</h2>
+            <p>Dalam konteks kehidupan siswa di era modern, pemahaman tentang Hari Akhir berfungsi sebagai <em>rem moral</em> di tengah arus globalisasi dan kebebasan informasi. Siswa yang menginternalisasi nilai ini akan memiliki ketahanan diri (<em>resilience</em>) yang kuat, tidak mudah terpengaruh oleh pergaulan bebas, dan senantiasa menjaga adab, baik di lingkungan sekolah Diniyah 5 Jurai maupun di masyarakat luas.</p>
+            <p>Pembelajaran ini bukan hanya untuk dihafal, tetapi untuk diintegrasikan ke dalam NIS (Nomor Induk Siswa) sebagai identitas pembelajar yang tidak hanya mengejar nilai akademik, tetapi juga nilai spiritual.</p>
+        </section>
+
+        <!-- Tombol Aksi -->
+        <div class="action-buttons">
+            <a href="index.html" class="btn btn-secondary">🏠 Kembali ke Beranda</a>
+            <a href="uji-formatif-1.html" class="btn btn-primary">📝 Uji Formatif Pertemuan 1</a>
+            <a href="2.html" class="btn btn-outline">Pertemuan Selanjutnya →</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 <span class="gold">Novrizal, S.Pd.I., M.Pd., Gr</span> | Diniyah 5 Jurai</p>
+        <p>Kontak: <span class="gold">malinmangkudun@gmail.com</span></p>
+        <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.6;">Buku Daras Akidah Akhlak Kelas IX Semester 1</p>
+    </footer>
+
+</body>
+</html>

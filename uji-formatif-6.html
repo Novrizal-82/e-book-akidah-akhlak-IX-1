@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Formatif Bab 6 - Hikmah dan Perilaku Beriman kepada Qadha Qadar | Akidah Akhlak Kls IX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0c10;
+            --bg-card: #14171f;
+            --gold-primary: #d4af37;
+            --gold-light: #f3e5ab;
+            --gold-dark: #aa8c2c;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--gold-primary); }
+        a { color: var(--gold-primary); text-decoration: none; transition: color 0.3s; }
+        a:hover { color: var(--gold-light); text-decoration: underline; }
+
+        .top-nav {
+            background: rgba(10, 12, 16, 0.95);
+            padding: 15px 20px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .top-nav a { color: var(--text-muted); font-size: 0.9rem; }
+        .top-nav a:hover { color: var(--gold-primary); text-decoration: none; }
+
+        .quiz-header {
+            text-align: center;
+            padding: 50px 20px 30px;
+            background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+        }
+        .quiz-header h1 { font-size: 2.2rem; margin-bottom: 10px; color: var(--text-main); }
+        .quiz-header h1 span { color: var(--gold-primary); }
+        .quiz-header p { color: var(--text-muted); max-width: 700px; margin: 0 auto 20px; }
+        .quiz-meta {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 10px 20px;
+            border-radius: 6px;
+            color: var(--gold-light);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        .content-block {
+            background: var(--bg-card);
+            padding: 35px;
+            border-radius: 8px;
+            border-left: 4px solid var(--gold-primary);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .content-block h3 { margin-bottom: 20px; font-size: 1.4rem; color: var(--gold-light); display: flex; align-items: center; gap: 10px; }
+        
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; color: var(--text-main); font-weight: 600; margin-bottom: 8px; }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 4px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+        }
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+        .quiz-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+        .quiz-item p { color: var(--text-main); font-weight: 600; margin-bottom: 12px; }
+        .quiz-item label {
+            display: block;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: color 0.2s;
+            font-weight: 400;
+        }
+        .quiz-item label:hover { color: var(--gold-primary); }
+        .quiz-item input[type="radio"] { margin-right: 10px; accent-color: var(--gold-primary); }
+        
+        .essay-item textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 4px;
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            resize: vertical;
+        }
+        .essay-item textarea:focus {
+            outline: none;
+            border-color: var(--gold-primary);
+        }
+
+        .warning-box {
+            background: rgba(212, 175, 55, 0.1);
+            border-left: 4px solid var(--gold-primary);
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 0 6px 6px 0;
+            color: var(--gold-light);
+            font-size: 0.95rem;
+        }
+
+        .btn-group { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 30px; justify-content: center; }
+        .btn-gold {
+            background: linear-gradient(90deg, var(--gold-primary), var(--gold-dark));
+            color: #0a0c10;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3); text-decoration: none; color: #0a0c10; }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--gold-primary);
+            color: var(--gold-primary);
+            padding: 14px 32px;
+            border-radius: 4px;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+        .btn-outline:hover { background: rgba(212, 175, 55, 0.1); text-decoration: none; }
+
+        .result-section {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            display: none;
+        }
+        .result-section h3 { color: var(--gold-primary); margin-bottom: 20px; }
+        .score-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+        .score-item {
+            background: var(--bg-dark);
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
+        .score-item .label { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 5px; }
+        .score-item .value { color: var(--gold-primary); font-size: 1.8rem; font-weight: 700; font-family: 'Playfair Display', serif; }
+
+        footer {
+            background: #050608;
+            padding: 50px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(212, 175, 55, 0.2);
+            color: var(--text-muted);
+            margin-top: 60px;
+        }
+        footer h4 { color: var(--gold-primary); margin-bottom: 10px; font-size: 1.3rem; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin: 20px 0; flex-wrap: wrap; }
+        .footer-links a { color: var(--text-muted); font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--gold-primary); text-decoration: none; }
+        .book-info { margin: 25px 0; padding: 15px; border-top: 1px solid rgba(212, 175, 55, 0.1); border-bottom: 1px solid rgba(212, 175, 55, 0.1); display: inline-block; }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="index.html">🏠 Beranda</a>
+        <span style="color: var(--text-muted);">|</span>
+        <a href="index.html#daftar-pertemuan">📚 Daftar Bab</a>
+        <span style="color: var(--text-muted);">|</span>
+        <a href="6.html">📖 Materi Bab 6</a>
+    </nav>
+
+    <header class="quiz-header">
+        <h1>📋 Uji Formatif Bab 6<br><span>Hikmah dan Contoh Perilaku Beriman kepada Qadha dan Qadar</span></h1>
+        <p>Materi: Hikmah beriman kepada Qadha dan Qadar, contoh perilaku positif dalam berbagai aspek kehidupan, implementasi konkret bagi siswa, tantangan di era digital, serta relevansinya.</p>
+        <div class="quiz-meta">
+            ⏱️ Waktu: Tidak terbatas &nbsp;|&nbsp; 🎯 Total Skor: 200 poin
+        </div>
+    </header>
+
+    <main class="container">
+        <form id="quizForm" onsubmit="event.preventDefault(); calculateScore();">
+            
+            <!-- Data Siswa -->
+            <div class="content-block">
+                <h3>📋 Data Siswa</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap *</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap siswa">
+                    </div>
+                    <div class="form-group">
+                        <label for="nis">NIS *</label>
+                        <input type="text" id="nis" name="nis" required placeholder="Masukkan Nomor Induk Siswa">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="tanggal">📅 Tanggal Ujian</label>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="kelas">Kelas</label>
+                        <select id="kelas" name="kelas" required>
+                            <option value="">Pilih Kelas</option>
+                            <option value="IX-A">Kelas IX-A</option>
+                            <option value="IX-B">Kelas IX-B</option>
+                            <option value="IX-C">Kelas IX-C</option>
+                            <option value="IX-D">Kelas IX-D</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian A: Pilihan Ganda -->
+            <div class="content-block">
+                <h3>📋 Bagian A – Pilihan Ganda</h3>
+                <div class="warning-box">
+                    ⚠️ Lengkapi semua 10 soal pilihan ganda! Setiap soal bernilai 10 poin (Total 100 poin).
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 1: Sikap berserah diri kepada Allah setelah berusaha maksimal (ikhtiar) disebut...</p>
+                    <label><input type="radio" name="q1" value="a"> a) Qana'ah</label>
+                    <label><input type="radio" name="q1" value="b"> b) Tawakkal</label>
+                    <label><input type="radio" name="q1" value="c"> c) Tawadhu</label>
+                    <label><input type="radio" name="q1" value="d"> d) Tasamuh</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 2: Hikmah beriman kepada Qadha dan Qadar yang membuat seseorang tidak mudah sombong atas kesuksesannya adalah...</p>
+                    <label><input type="radio" name="q2" value="a"> a) Kesadaran bahwa kesuksesan adalah anugerah Allah</label>
+                    <label><input type="radio" name="q2" value="b"> b) Keyakinan bahwa semua orang pasti sukses</label>
+                    <label><input type="radio" name="q2" value="c"> c) Merasa lebih hebat dari orang lain</label>
+                    <label><input type="radio" name="q2" value="d"> d) Menganggap kesuksesan sebagai hak</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 3: Sikap seorang siswa yang beriman kepada Qadha dan Qadar ketika mendapat nilai ujian yang kurang memuaskan adalah...</p>
+                    <label><input type="radio" name="q3" value="a"> a) Menyalahkan guru dan berhenti belajar</label>
+                    <label><input type="radio" name="q3" value="b"> b) Menyontek agar nilainya bagus</label>
+                    <label><input type="radio" name="q3" value="c"> c) Muhasabah, bersabar, dan berusaha lebih giat</label>
+                    <label><input type="radio" name="q3" value="d"> d) Menganggap nilai tidak penting</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 4: Dalil Al-Qur'an yang menyatakan "Sesungguhnya sesudah kesulitan itu ada kemudahan" terdapat dalam...</p>
+                    <label><input type="radio" name="q4" value="a"> a) QS. Al-Insyirah ayat 5-6</label>
+                    <label><input type="radio" name="q4" value="b"> b) QS. Al-Baqarah ayat 153</label>
+                    <label><input type="radio" name="q4" value="c"> c) QS. At-Taubah ayat 51</label>
+                    <label><input type="radio" name="q4" value="d"> d) QS. Al-Hadid ayat 22</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 5: Dalam konteks era digital, sikap seorang siswa yang beriman terhadap konten flexing di media sosial adalah...</p>
+                    <label><input type="radio" name="q5" value="a"> a) Ikut flexing agar dianggap keren</label>
+                    <label><input type="radio" name="q5" value="b"> b) Iri dan dengki terhadap yang flexing</label>
+                    <label><input type="radio" name="q5" value="c"> c) Tidak terpengaruh, bersyukur atas nikmat Allah, dan fokus pada kualitas diri</label>
+                    <label><input type="radio" name="q5" value="d"> d) Menyebarkan konten flexing ke orang lain</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 6: Perbedaan antara tawakkal yang benar dan fatalisme (jabariyah) adalah...</p>
+                    <label><input type="radio" name="q6" value="a"> a) Tawakkal setelah ikhtiar, fatalisme tanpa ikhtiar</label>
+                    <label><input type="radio" name="q6" value="b"> b) Keduanya sama-sama pasrah tanpa usaha</label>
+                    <label><input type="radio" name="q6" value="c"> c) Tawakkal tanpa doa, fatalisme dengan doa</label>
+                    <label><input type="radio" name="q6" value="d"> d) Tidak ada perbedaan</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 7: Hikmah beriman kepada Qadha dan Qadar yang memberikan ketenangan jiwa disebut...</p>
+                    <label><input type="radio" name="q7" value="a"> a) Thuma'ninah</label>
+                    <label><input type="radio" name="q7" value="b"> b) Hasad</label>
+                    <label><input type="radio" name="q7" value="c"> c) Riya'</label>
+                    <label><input type="radio" name="q7" value="d"> d) Sum'ah</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 8: Sikap seorang siswa yang beriman ketika melihat teman berhasil meraih prestasi adalah...</p>
+                    <label><input type="radio" name="q8" value="a"> a) Iri dan berusaha menjatuhkannya</label>
+                    <label><input type="radio" name="q8" value="b"> b) Mendoakan kebaikan dan belajar dari kesuksesannya</label>
+                    <label><input type="radio" name="q8" value="c"> c) Acuh tak acuh</label>
+                    <label><input type="radio" name="q8" value="d"> d) Menyebarkan hoaks tentang temannya</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 9: Tantangan implementasi hikmah beriman kepada Qadha dan Qadar di era digital yang paling menonjol adalah...</p>
+                    <label><input type="radio" name="q9" value="a"> a) Kurangnya buku cetak</label>
+                    <label><input type="radio" name="q9" value="b"> b) Budaya instan, materialisme digital, dan hoaks ramalan nasib</label>
+                    <label><input type="radio" name="q9" value="c"> c) Terlalu banyak waktu luang</label>
+                    <label><input type="radio" name="q9" value="d"> d) Tidak adanya teknologi</label>
+                </div>
+
+                <div class="quiz-item">
+                    <p>Soal 10: Konsep resiliensi spiritual dalam menghadapi ujian hidup berdasarkan iman kepada Qadha dan Qadar adalah...</p>
+                    <label><input type="radio" name="q10" value="a"> a) Kemampuan untuk bangkit dari keterpurukan dengan bersabar, berikhtiar, dan bertawakkal</label>
+                    <label><input type="radio" name="q10" value="b"> b) Kemampuan untuk menghindari semua masalah</label>
+                    <label><input type="radio" name="q10" value="c"> c) Kemampuan untuk menyalahkan orang lain</label>
+                    <label><input type="radio" name="q10" value="d"> d) Kemampuan untuk pasrah tanpa usaha</label>
+                </div>
+            </div>
+
+            <!-- Bagian B: Essay -->
+            <div class="content-block">
+                <h3>✍️ Bagian B – Essay</h3>
+                <div class="warning-box">
+                    ⚠️ Pastikan Nama Lengkap dan NIS telah diisi! Setiap soal essay bernilai 20 poin (Total 100 poin).
+                </div>
+
+                <div class="quiz-item essay-item">
+                    <p>Soal Essay 1</p>
+                    <p style="color: var(--text-muted); font-weight: 400; margin-bottom: 15px;">Jelaskan pengertian hikmah beriman kepada Qadha dan Qadar, serta sebutkan lima dampaknya dalam kehidupan seorang siswa!</p>
+                    <textarea name="essay1" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div class="quiz-item essay-item">
+                    <p>Soal Essay 2</p>
+                    <p style="color: var(--text-muted); font-weight: 400; margin-bottom: 15px;">Sebutkan dan jelaskan minimal 10 hikmah beriman kepada Qadha dan Qadar beserta contoh implementasinya dalam kehidupan sehari-hari!</p>
+                    <textarea name="essay2" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div class="quiz-item essay-item">
+                    <p>Soal Essay 3</p>
+                    <p style="color: var(--text-muted); font-weight: 400; margin-bottom: 15px;">Buatlah analisis perbandingan antara perilaku siswa yang beriman kepada Qadha dan Qadar dan yang tidak beriman dalam aspek: sikap terhadap kegagalan, sikap terhadap kesuksesan, respons terhadap musibah, pandangan terhadap rezeki orang lain, dan motivasi belajar!</p>
+                    <textarea name="essay3" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div class="quiz-item essay-item">
+                    <p>Soal Essay 4</p>
+                    <p style="color: var(--text-muted); font-weight: 400; margin-bottom: 15px;">Jelaskan perbedaan antara tawakkal yang benar dan fatalisme (paham jabariyah), serta berikan contoh konkret masing-masing dalam kehidupan siswa!</p>
+                    <textarea name="essay4" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                </div>
+
+                <div class="quiz-item essay-item">
+                    <p>Soal Essay 5</p>
+                    <p style="color: var(--text-muted); font-weight: 400; margin-bottom: 15px;">Berikan tiga studi kasus kontekstual tentang fenomena yang dihadapi siswa di era modern (misal: kegagalan ujian, flexing di media sosial, hoaks ramalan zodiak), dan analisis bagaimana hikmah beriman kepada Qadha dan Qadar dapat menjadi solusi!</p>
+                    <textarea name="essay5" placeholder="Tuliskan jawaban Anda di sini..."></textarea>
+                </div>
+            </div>
+
+            <!-- Hasil Uji Formatif -->
+            <div class="result-section" id="resultSection">
+                <h3>📊 Hasil Uji Formatif</h3>
+                <p style="color: var(--text-muted); margin-bottom: 25px;">Terima kasih telah menyelesaikan uji formatif ini, <span id="resultName" style="color: var(--gold-primary); font-weight: 600;">Siswa</span>!</p>
+                
+                <div class="score-grid">
+                    <div class="score-item">
+                        <div class="label">Skor Pilihan Ganda</div>
+                        <div class="value" id="scorePG">0/100</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="label">Skor Essay</div>
+                        <div class="value" id="scoreEssay">0/100</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="label">Skor Total</div>
+                        <div class="value" id="scoreTotal">0/200</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="label">Nilai Akhir</div>
+                        <div class="value" id="nilaiAkhir">0</div>
+                    </div>
+                </div>
+
+                <div class="btn-group">
+                    <button type="button" class="btn-gold" onclick="alert('Jawaban berhasil dikirim ke email guru: malinmangkudun@gmail.com')">✉️ KIRIM JAWABAN & LIHAT HASIL</button>
+                    <button type="button" class="btn-outline" onclick="alert('Fitur unduh PDF akan segera tersedia.')">📥 UNDUH PDF LENGKAP</button>
+                    <button type="button" class="btn-outline" onclick="alert('Fitur unduh skor akan segera tersedia.')">📊 UNDUH SKOR SAJA</button>
+                    <button type="button" class="btn-outline" onclick="window.location.href='mailto:malinmangkudun@gmail.com?subject=Hasil Uji Formatif Bab 6'">✉️ KIRIM EMAIL GURU</button>
+                    <button type="button" class="btn-outline" onclick="location.reload()">🔄 MULAI ULANG</button>
+                </div>
+            </div>
+
+            <!-- Tombol Submit Utama -->
+            <div class="btn-group" id="submitGroup">
+                <button type="submit" class="btn-gold">✅ SELESAI & LIHAT HASIL</button>
+            </div>
+
+        </form>
+
+        <!-- Navigasi Bawah -->
+        <div class="btn-group" style="margin-top: 50px; margin-bottom: 30px;">
+            <a href="index.html" class="btn-outline">🏠 Kembali ke Beranda</a>
+            <a href="6.html" class="btn-outline">📖 Kembali ke Materi Bab 6</a>
+            <a href="7.html" class="btn-gold">Lanjut ke Materi Bab 7 →</a>
+        </div>
+
+    </main>
+
+    <footer>
+        <h4>Akidah Akhlak Kls IX Semester 1</h4>
+        <p>Buku daras untuk siswa dan guru pendidikan Islam. Teori, praktik, dan aplikasi dalam kehidupan sehari-hari.</p>
+        
+        <div class="footer-links">
+            <a href="index.html">Beranda</a>
+            <a href="index.html#tentang">Tentang Buku</a>
+            <a href="index.html#daftar-pertemuan">Daftar Bab</a>
+            <a href="index.html#penulis">Penulis</a>
+        </div>
+
+        <div class="book-info">
+            <p style="margin-bottom: 5px;"><strong>Versi Cetak</strong> — Rp 75.000</p>
+            <p><strong>Versi E-Book</strong> — Rp 45.000</p>
+        </div>
+
+        <div style="margin-top: 25px;">
+            <p>📧 Hubungi Penulis: <a href="mailto:malinmangkudun@gmail.com">malinmangkudun@gmail.com</a></p>
+            <p>🏫 Sekolah: Diniyah 5 Jurai</p>
+        </div>
+
+        <p style="margin-top: 30px; font-size: 0.85rem; opacity: 0.7;">
+            &copy; 2026 Novrizal, S.Pd.I., M.Pd., Gr. Hak cipta dilindungi undang-undang.
+        </p>
+    </footer>
+
+    <script>
+        function calculateScore() {
+            // Kunci Jawaban Pilihan Ganda
+            const answers = {
+                q1: 'b', q2: 'a', q3: 'c', q4: 'a', q5: 'c',
+                q6: 'a', q7: 'a', q8: 'b', q9: 'b', q10: 'a'
+            };
+            
+            let pgScore = 0;
+            for (let i = 1; i <= 10; i++) {
+                const selected = document.querySelector(`input[name="q${i}"]:checked`);
+                if (selected && selected.value === answers[`q${i}`]) {
+                    pgScore += 10;
+                }
+            }
+
+            const essayScore = 80; 
+            const totalScore = pgScore + essayScore;
+            const finalGrade = (totalScore / 200) * 100;
+
+            const namaSiswa = document.getElementById('nama').value || 'Siswa';
+
+            document.getElementById('resultName').textContent = namaSiswa;
+            document.getElementById('scorePG').textContent = pgScore + '/100';
+            document.getElementById('scoreEssay').textContent = essayScore + '/100';
+            document.getElementById('scoreTotal').textContent = totalScore + '/200';
+            document.getElementById('nilaiAkhir').textContent = finalGrade.toFixed(1);
+
+            document.getElementById('submitGroup').style.display = 'none';
+            document.getElementById('resultSection').style.display = 'block';
+            
+            document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        document.getElementById('tanggal').valueAsDate = new Date();
+    </script>
+
+</body>
+</html>
